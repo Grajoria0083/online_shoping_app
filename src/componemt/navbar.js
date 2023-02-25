@@ -1,10 +1,10 @@
 const navbar = () =>{
-    return ` <h1>Home</h1>
+    return ` <h1> <a href="/index.html">Home </a></h1>
     <nav class="nav">
          <ul>
-            <li><a href="">Login</a></li>
-            <li><a href="">SignUp</a></li>
-            <li><a href="">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">SignUp</a></li>
+            <li><a href="cart.html">Cart</a></li>
          </ul>
     </nav>
     <div class="mobile_nav">
