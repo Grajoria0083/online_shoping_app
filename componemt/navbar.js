@@ -1,5 +1,5 @@
 const navbar = () =>{
-    let nav = ` <h1>Home</h1>
+    return ` <h1>Home</h1>
     <nav class="nav">
          <ul>
             <li><a href="">Login</a></li>
@@ -11,8 +11,6 @@ const navbar = () =>{
         <i name="open" class="fa-solid fa-bars mobile_nav_icon"></i>
         <i name="close" class="fa-solid fa-xmark mobile_nav_icon"></i>
     </div>`
-
-    return nav;
 };
 
 export default navbar;
