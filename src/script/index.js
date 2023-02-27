@@ -13,5 +13,24 @@ menubtn.addEventListener('click',toggleIcon);
 //products maping
 let container = document.getElementById('container');
 
+const getData = async()=>{
+      let data = await fetch('https://e-commerce-rest-api-production.up.railway.app//customer/product');
+      data = data.json();
+      console.log(data);
+      return data;
+}
+
+const mapData =(data)=>{
+      data.map((el)=>{
+         let card = document.createElement('div');
+         
+         let poster = document.createElement('img');
+
+         let name = document.createDocumentFragment('h1');
+
+         let price = document.createElement('h1');
+      })
+}
+
 
 
