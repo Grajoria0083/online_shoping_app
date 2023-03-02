@@ -1,3 +1,4 @@
+import append from "../componemt/append.js";
 import fetchData from "../componemt/fetch.js";
 import navbar from "../componemt/navbar.js";
 
@@ -14,7 +15,7 @@ menubtn.addEventListener('click',toggleIcon);
 //products maping
 let container = document.getElementById('container');
 
-let url = `http://e-commerce-rest-api-production.up.railway.app/customer/product`;
+let url = `https://e-commerce-rest-api-production.up.railway.app/customer/product`;
 let data = await fetchData(url);
 append(data,container);
 
