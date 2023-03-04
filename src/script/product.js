@@ -1,4 +1,3 @@
-import append from "../componemt/append.js";
 import fetchData from "../componemt/fetch.js";
 import navbar from "../componemt/navbar.js";
 
@@ -39,7 +38,7 @@ function appendProduct(){
 
 
 function addToCartFun(product){
-   
+
 }
 
 
