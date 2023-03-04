@@ -18,22 +18,25 @@ let url = `https://e-commerce-rest-api-production.up.railway.app/customer/produc
 let data = await fetchData(url);
 
 function appendProduct(){
-       let div = document.createElement('div');
        let img = document.createElement('img');
        img.src = data.productImage;
+       let div = document.createElement('div');
        let h1 = document.createElement('h1');
        h1.innerText = data.productName;
+       let div1 = document.createElement('div');
+       div1.setAttribute('class','div1')
        let brand = document.createElement('p');
-       brand.innerText = data.manufacturer;        ;
+       brand.innerText = `BRAND: ${data.manufacturer}`;        ;
        let price = document.createElement('p');
-       price.innerText = data.price;
+       price.innerText = `PRICE: ${data.price} $`;
+       div1.append(brand,price)
        let btn = document.createElement('button');
        btn.innerText = 'Add To Cart';
        btn.addEventListener('click',function(){
          addToCartFun(data);
        })
-       div.append(img,h1,brand,price,btn);
-       container.append(div);
+       div.append(h1,div1,btn);
+       container.append(img,div);
 }
 
 
