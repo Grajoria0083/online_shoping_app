@@ -6,7 +6,7 @@ function appendData(data,container){
         let h1 = document.createElement('h1');
         h1.innerText = `${el.productName}`;
         let brand = document.createElement('p');
-        brand.innerText = `BRAND: ${el.manufacturer}`;        ;
+        brand.innerText = `BRAND: ${el.manufacturer}`;
         let price = document.createElement('p');
         price.innerText = `PRICE: ${el.price} $`;
         div.append(img,h1,brand,price);
