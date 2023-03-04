@@ -4,11 +4,11 @@ function appendData(data,container){
         let img = document.createElement('img');
         img.src = el.productImage;
         let h1 = document.createElement('h1');
-        h1.innerText = el.productName;
+        h1.innerText = `${el.productName}`;
         let brand = document.createElement('p');
-        brand.innerText = el.manufacturer;        ;
+        brand.innerText = `BRAND: ${el.manufacturer}`;        ;
         let price = document.createElement('p');
-        price.innerText = el.price;
+        price.innerText = `PRICE: ${el.price} $`;
         div.append(img,h1,brand,price);
         const id = el.productId;
         div.addEventListener('click',()=>{
