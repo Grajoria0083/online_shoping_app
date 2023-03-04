@@ -1,4 +1,4 @@
-import append from "../componemt/append.js";
+import appendData from "../componemt/append.js";
 import fetchData from "../componemt/fetch.js";
 import navbar from "../componemt/navbar.js";
 
@@ -17,4 +17,4 @@ let container = document.getElementById('container');
 
 let url = `https://e-commerce-rest-api-production.up.railway.app/customer/product`;
 let data = await fetchData(url);
-append(data,container,true);
+appendData(data,container);

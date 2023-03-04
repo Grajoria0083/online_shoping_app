@@ -1,4 +1,4 @@
-function append(data,container,xtraFun){
+function appendData(data,container){
     data.forEach(el => {
         let div = document.createElement('div');
         let img = document.createElement('img');
@@ -11,11 +11,10 @@ function append(data,container,xtraFun){
         price.innerText = el.price;
         div.append(img,h1,brand,price);
         const id = el.productId;
-        if(xtraFun){
-            div.addEventListener('click',()=>{
+        div.addEventListener('click',()=>{
                 ParticularProduct(id);
             })
-        }
+        
         container.append(div);
     });
 }
@@ -26,4 +25,4 @@ const ParticularProduct=(id)=>{
     window.location = '/src/pages/product.html';
 }
 
-export default append;
+export default appendData;
