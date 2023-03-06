@@ -12,7 +12,8 @@ menubtn.addEventListener('click',toggleIcon);
 
 //product maping
 let container = document.getElementById('container');
-let id = localStorage.getItem('id');
+const queryParams = new URLSearchParams(window.location.search);
+const id = queryParams.get('id'); 
 console.log(id);
 let url = `https://e-commerce-rest-api-production.up.railway.app/customer/product/${id}`;
 let data = await fetchData(url);

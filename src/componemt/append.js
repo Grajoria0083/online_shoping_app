@@ -20,9 +20,7 @@ function appendData(data,container){
 }
 
 const ParticularProduct=(id)=>{
-    console.log(id);
-    localStorage.setItem('id',JSON.stringify(id));
-    window.location = '/product.html';
+    window.location = `/product.html?id=${id}`;
 }
 
 export default appendData;
