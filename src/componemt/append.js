@@ -4,12 +4,15 @@ function appendData(data,container){
         let img = document.createElement('img');
         img.src = el.productImage;
         let h1 = document.createElement('h1');
-        h1.innerText = `${el.productName}`;
+        h1.innerText = el.productName;
+        // console.log(el.productName);
+        // console.log("h1 ",h1);
         let brand = document.createElement('p');
         brand.innerText = `BRAND: ${el.manufacturer}`;
         let price = document.createElement('p');
         price.innerText = `PRICE: ${el.price} $`;
         div.append(img,h1,brand,price);
+        console.log(div)
         const id = el.productId;
         div.addEventListener('click',()=>{
                 ParticularProduct(id);
