@@ -8,3 +8,7 @@ const toggleIcon=()=>{
    header.classList.toggle('active');
 }
 menubtn.addEventListener('click',toggleIcon);
+
+
+//data mapping;
+const container = document.getElementById('container');
