@@ -2,3 +2,6 @@
     display: flex;
     flex-direction: column;
 }
+*{
+    font-family: GT-America-Standard, "Helvetica Neue", Helvetica, sans-serif;
+}

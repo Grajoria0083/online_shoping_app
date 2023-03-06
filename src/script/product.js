@@ -1,4 +1,5 @@
 import fetchData from "../componemt/fetch.js";
+import footer from "../componemt/footer.js";
 import navbar from "../componemt/navbar.js";
 
 //navbar logic;
@@ -46,4 +47,8 @@ function addToCartFun(product){
 }
 
 
-appendProduct()
+appendProduct();
+
+
+//footer 
+document.querySelector('.footer').innerHTML = footer();

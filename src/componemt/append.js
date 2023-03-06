@@ -1,4 +1,5 @@
 function appendData(data,container){
+    container.innerHTML = null;
     data.forEach(el => {
         let div = document.createElement('div');
         let img = document.createElement('img');

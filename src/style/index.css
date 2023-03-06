@@ -7,7 +7,9 @@
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2rem;
 }
-
+*{
+    font-family: GT-America-Standard, "Helvetica Neue", Helvetica, sans-serif;
+}
 #container>div{
     display: flex;
     flex-direction: column;
@@ -15,3 +17,34 @@
     border: 1px solid black;
     box-shadow: 4px 4px 4px teal;
 }
+
+@media(max-width:900px){
+    #container{
+        width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2rem;
+    }
+}
+
+@media(max-width:400px){
+    #container{
+        width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+       
+    }
+}
+
+#functionalities{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+

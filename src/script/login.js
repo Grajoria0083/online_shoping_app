@@ -1,3 +1,4 @@
+import footer from "../componemt/footer.js";
 import navbar from "../componemt/navbar.js";
 
 //navbar logic;
@@ -8,3 +9,7 @@ const toggleIcon=()=>{
    header.classList.toggle('active');
 }
 menubtn.addEventListener('click',toggleIcon);
+
+
+//footer 
+document.querySelector('.footer').innerHTML = footer();
