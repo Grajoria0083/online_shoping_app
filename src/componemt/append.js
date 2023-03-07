@@ -11,6 +11,7 @@ function appendData(data,container){
         let price = document.createElement('p');
         price.innerText = `PRICE: ${el.price} $`;
         div.append(img,h1,brand,price);
+        console.log(div)
         const id = el.productId;
         div.addEventListener('click',()=>{
                 ParticularProduct(id);
