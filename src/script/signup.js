@@ -1,9 +1,6 @@
 
 import navbar from "../componemt/navbar.js";
-
 import footer from "../componemt/footer.js";
-import navbar from "../componemt/navbar.js";
-
 
 //navbar logic;
 let header = document.querySelector('.header');

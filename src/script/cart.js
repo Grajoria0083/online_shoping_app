@@ -11,10 +11,8 @@ const toggleIcon=()=>{
 }
 menubtn.addEventListener('click',toggleIcon);
 
-
 //data mapping;
 const container = document.getElementById('container');
-
 
 //footer 
 document.querySelector('.footer').innerHTML = footer();
