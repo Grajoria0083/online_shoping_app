@@ -1,12 +1,11 @@
 function appendData(data,container){
+    container.innerHTML = null;
     data.forEach(el => {
         let div = document.createElement('div');
         let img = document.createElement('img');
         img.src = el.productImage;
         let h1 = document.createElement('h1');
         h1.innerText = el.productName;
-        // console.log(el.productName);
-        // console.log("h1 ",h1);
         let brand = document.createElement('p');
         brand.innerText = `BRAND: ${el.manufacturer}`;
         let price = document.createElement('p');

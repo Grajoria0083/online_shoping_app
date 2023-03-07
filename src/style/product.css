@@ -51,3 +51,7 @@ button{
         width: 70%;
     }
 }
+
+*{
+    font-family: GT-America-Standard, "Helvetica Neue", Helvetica, sans-serif;
+}

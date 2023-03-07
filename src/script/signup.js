@@ -1,4 +1,9 @@
-// import navbar from "../componemt/navbar.js";
+
+import navbar from "../componemt/navbar.js";
+
+import footer from "../componemt/footer.js";
+import navbar from "../componemt/navbar.js";
+
 
 //navbar logic;
 let header = document.querySelector('.header');
@@ -8,6 +13,7 @@ const toggleIcon=()=>{
    header.classList.toggle('active');
 }
 menubtn.addEventListener('click',toggleIcon);
+
 
 function signupUser(){
    var name = document.getElementById("name").value;
@@ -52,3 +58,8 @@ fetch(url, {
    console.log("err : ",err);   
 console.log(obj)
 }
+
+
+//footer 
+document.querySelector('.footer').innerHTML = footer();
+

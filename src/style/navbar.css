@@ -8,7 +8,12 @@
     /* position: fixed;
     z-index: 10; */
 }
-.header >h1{
+
+*{
+    font-family: GT-America-Standard, "Helvetica Neue", Helvetica, sans-serif;
+}
+.header>h1{
+
     color: white;
     text-decoration: none;
 }

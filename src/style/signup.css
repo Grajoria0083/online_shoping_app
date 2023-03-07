@@ -3,6 +3,7 @@
     flex-direction: column;
 }
 
+
 #form_login input{
     margin-right: -1px;
     padding: 7px;
@@ -18,3 +19,8 @@
 #form_login button{
     /* text-align: center; */
 }
+
+*{
+    font-family: GT-America-Standard, "Helvetica Neue", Helvetica, sans-serif;
+}
+

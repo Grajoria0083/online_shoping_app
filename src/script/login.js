@@ -1,3 +1,4 @@
+import footer from "../componemt/footer.js";
 import navbar from "../componemt/navbar.js";
 
 //navbar logic;
@@ -8,6 +9,7 @@ const toggleIcon=()=>{
    header.classList.toggle('active');
 }
 menubtn.addEventListener('click',toggleIcon);
+
 
 
 function loginU(){
@@ -38,4 +40,8 @@ fetch(url, {
 .catch(err)
    console.log("err : ",err);
 }
+
+
+//footer 
+document.querySelector('.footer').innerHTML = footer();
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style/index.css">
     <link rel="stylesheet" href="./src/style/navbar.css">
+    <link rel="stylesheet" href="./src/style/footer.css">
     <script src="https://kit.fontawesome.com/9356b98e77.js" crossorigin="anonymous"></script>
     <title>shoping app</title>
     <link rel="stylesheet" href="/style/index.css">
@@ -15,8 +16,23 @@
     <header class="header "></header>
 
     <section>
+        <div id="functionalities">
+              <div>
+                <label for="">SORT</label>
+                <select id="sortvalue">
+                    <option>choose a option to sort</option>
+                    <option value="ASC">ASC</option>
+                    <option value="DSC">DSC</option>
+                  </select>
+              </div>
+              <div>
+                <input type="text" id="searchvalue" placeholder="search by name">
+                <button id="searchbtn">SEARCH</button>
+              </div>
+        </div>
         <div id="container"></div>
     </section>
+    <footer class="footer"></footer>
     <script type="module"  src="./src/script/index.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 import fetchData from "../componemt/fetch.js";
+import footer from "../componemt/footer.js";
 import navbar from "../componemt/navbar.js";
 
 //navbar logic;
@@ -24,6 +25,10 @@ function appendProduct(){
        let div = document.createElement('div');
        let h1 = document.createElement('h1');
        h1.innerText = data.productName;
+       let spec = document.createElement('p');
+       spec.innerText = data.specification;
+       let clr = document.createElement('p');
+       clr.innerText = `COLOR: ${data.color}`;
        let div1 = document.createElement('div');
        div1.setAttribute('class','div1')
        let brand = document.createElement('p');
@@ -36,7 +41,7 @@ function appendProduct(){
        btn.addEventListener('click',function(){
          addToCartFun(data);
        })
-       div.append(h1,div1,btn);
+       div.append(h1,spec,clr,div1,btn);
        container.append(img,div);
 }
 
@@ -46,4 +51,8 @@ function addToCartFun(product){
 }
 
 
-appendProduct()
+appendProduct();
+
+
+//footer 
+document.querySelector('.footer').innerHTML = footer();
